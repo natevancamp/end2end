@@ -261,6 +261,39 @@ section{padding:104px 0}
 .re-list li:first-child{border-top:1px solid var(--line)}
 .re-list li::before{content:'';flex:0 0 7px;height:7px;background:var(--teal);margin-top:10px}
 .re-list strong{font-weight:600;color:var(--navy)}
+/* sidekick realty callout */
+.sidekick{
+  margin-top:72px;background:var(--navy);color:#fff;
+  display:grid;grid-template-columns:1.35fr .65fr;gap:0;
+}
+.sidekick-body{padding:52px 50px}
+.sidekick-body h3{font-size:clamp(26px,3vw,34px);color:#fff;margin-bottom:18px}
+.sidekick-body p{
+  color:rgba(255,255,255,.76);font-size:17px;line-height:1.68;max-width:60ch;margin-bottom:32px;
+}
+.sidekick-card{
+  background:rgba(255,255,255,.05);border-left:1px solid rgba(255,255,255,.14);
+  padding:52px 40px;display:flex;flex-direction:column;justify-content:center;
+}
+.sk-label{
+  font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--teal-lt);margin-bottom:14px;
+}
+.sidekick-card strong{
+  font-family:'Newsreader',serif;font-weight:400;font-size:26px;color:#fff;line-height:1.2;
+}
+.sk-dba{font-size:13px;color:rgba(255,255,255,.5);margin-top:6px}
+.sidekick-card dl{margin-top:26px;display:flex;flex-direction:column;gap:12px}
+.sidekick-card dl div{
+  display:flex;justify-content:space-between;gap:16px;
+  padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.12);
+}
+.sidekick-card dl div:last-child{border-bottom:0;padding-bottom:0}
+.sidekick-card dt{
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.5);padding-top:3px;
+}
+.sidekick-card dd{font-size:14px;color:#fff;font-weight:500;text-align:right}
 .pipeline{
   display:flex;align-items:center;margin-top:74px;padding-top:36px;
   border-top:1px solid var(--line);
@@ -309,6 +342,20 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
 }
 .foot-col a{display:block;text-decoration:none;font-size:15px;margin-bottom:11px;transition:.2s}
 .foot-col a:hover{color:var(--teal-lt)}
+.foot-sister{
+  padding:34px 0 30px;border-bottom:1px solid rgba(255,255,255,.14);text-align:center;
+}
+.foot-sister strong{
+  display:block;font-family:'Newsreader',serif;font-weight:400;font-size:24px;color:#fff;
+  letter-spacing:-.01em;
+}
+.foot-sister span{
+  display:block;margin-top:8px;font-size:14px;color:var(--teal-lt);letter-spacing:.02em;
+}
+.foot-sister small{
+  display:block;margin:18px auto 0;max-width:74ch;font-size:11.5px;line-height:1.7;
+  color:rgba(255,255,255,.42);
+}
 .foot-bot{
   padding-top:26px;display:flex;justify-content:space-between;gap:20px;
   font-size:13.5px;flex-wrap:wrap;
@@ -330,6 +377,9 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
   .foot-top{grid-template-columns:1fr;gap:34px}
   .step{grid-template-columns:52px 1fr;gap:20px}
   .step p{grid-column:2}
+  .sidekick{grid-template-columns:1fr;margin-top:48px}
+  .sidekick-body{padding:38px 28px}
+  .sidekick-card{border-left:0;border-top:1px solid rgba(255,255,255,.14);padding:32px 28px}
   .pipeline{flex-wrap:wrap;gap:10px 16px;margin-top:48px}
   .pipeline i{display:none}
   .pipeline span{
@@ -558,18 +608,37 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
         <span class="eyebrow">Selling the Property</span>
         <h2 style="font-size:clamp(30px,3.9vw,46px);margin-bottom:22px">And when the house itself needs to sell, that is ours to handle too.</h2>
         <p class="lede" style="margin-bottom:16px">This is where most estate companies hand you a business card and walk away. The contents are gone, the house is empty, and now you are starting over with a realtor who was not there for any of it, explaining the whole situation again from the beginning.</p>
-        <p class="lede">We do not do that. The same team that cleared and prepared the property can carry it through listing and closing, because we already know the house, the timeline and the family.</p>
+        <p class="lede">We do not do that. Our sister company, Sidekick Realty LLC, is a Colorado licensed real estate brokerage, so the property can move from cleared to listed without you starting over with someone who was not there for any of it.</p>
         <ul class="re-list">
           <li><span><strong>Sequenced in the right order.</strong> Contents out, repairs done, cleaning finished, photography shot, then listed. A house photographed before the cleanout sells for less, and it happens constantly.</span></li>
           <li><span><strong>Probate and trust sales.</strong> We work with executors, personal representatives and trustees, and we understand court timelines and multiple heirs who each need to sign.</span></li>
           <li><span><strong>Built for out of state heirs.</strong> If you are handling this from another state, you should not have to fly in repeatedly. We are the local presence.</span></li>
-          <li><span><strong>One point of contact from walkthrough to closing.</strong> Nothing falls into the gap between vendors, because there is no gap.</span></li>
+          <li><span><strong>One point of contact from walkthrough to closing.</strong> Nothing falls into the gap between companies, because we work as one team.</span></li>
         </ul>
         <p class="lede" style="margin-top:28px;font-size:17px">If you already have an agent you trust, that is genuinely fine. We will hand them a cleared, repaired, market ready property and step back.</p>
         <a class="btn btn-outline" href="#contact" style="margin-top:30px">Talk Through the Property</a>
       </div>
       <img src="https://newspack-coloradosun.s3.amazonaws.com/wp-content/uploads/2026/04/IMG_7720-scaled.jpg" alt="Colorado home prepared for sale">
     </div>
+    <div class="sidekick">
+      <div class="sidekick-body">
+        <span class="eyebrow on-navy">Sister Company</span>
+        <h3>Real Estate Services, When You Need Them</h3>
+        <p>Once your estate has been liquidated and the property is ready for its next chapter, End2End Estate can connect you with our sister company, Sidekick Realty LLC, a Colorado licensed real estate brokerage, to handle the sale of the property.</p>
+        <a class="btn btn-teal" href="#contact">Sell the Property <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="sidekick-card">
+        <span class="sk-label">Licensed Brokerage</span>
+        <strong>Sidekick Realty LLC</strong>
+        <span class="sk-dba">doing business as Sidekick Realty</span>
+        <dl>
+          <div><dt>License</dt><dd>EC100099290</dd></div>
+          <div><dt>Level</dt><dd>Real Estate Company, Employing</dd></div>
+          <div><dt>State</dt><dd>Colorado</dd></div>
+        </dl>
+      </div>
+    </div>
+
     <div class="pipeline">
       <span>Estate</span><i></i>
       <span>Inventory</span><i></i>
@@ -757,6 +826,11 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
         <a href="#areas">Service Area</a>
         <a href="#process">How It Works</a>
       </div>
+    </div>
+    <div class="foot-sister">
+      <strong>End2End Estate &amp; Sidekick Realty LLC</strong>
+      <span>Two specialized companies. One seamless transition.</span>
+      <small>Sidekick Realty LLC, doing business as Sidekick Realty. Colorado real estate brokerage, license EC100099290. End2End Estate provides estate liquidation and transition services. All real estate brokerage services are provided by Sidekick Realty LLC.</small>
     </div>
     <div class="foot-bot">
       <span>&copy; 2026 End2End Estate. All rights reserved.</span>
