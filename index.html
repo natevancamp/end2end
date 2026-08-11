@@ -675,7 +675,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
           <li>Straight answers about what is worth selling and what is not</li>
         </ul>
         <div class="phone-block">
-          <span>Call or text</span>
+          <span>Call us</span>
           <a href="tel:3036474188">303-647-4188</a>
         </div>
       </div>
@@ -727,7 +727,7 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:70px 0 40p
         <div class="field"><label for="f-details">Tell us about the estate</label><textarea id="f-details" name="Details" placeholder="Size of the home, timeline, anything we should know."></textarea></div>
         <button class="btn btn-teal" type="submit" id="formSubmitBtn">Request Free Assessment</button>
         <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-        <small>Prefer to talk? Call or text <a href="tel:3036474188" style="color:var(--teal-dk);font-weight:600">303-647-4188</a>. We respond to every inquiry personally.</small>
+        <small>Prefer to talk? Call <a href="tel:3036474188" style="color:var(--teal-dk);font-weight:600">303-647-4188</a>. We respond to every inquiry personally.</small>
       </form>
     </div>
   </div>
@@ -817,14 +817,14 @@ var FORM_RECIPIENT = "hello@end2endestates.com";
       .then(function (res) {
         if (res.success === 'true' || res.success === true) {
           form.reset();
-          say('Thank you. Your request is in and we will follow up shortly. If you need us sooner, call or text 303-647-4188.', 'ok');
+          say('Thank you. Your request is in and we will follow up shortly. If you need us sooner, call 303-647-4188.', 'ok');
           btn.textContent = 'Request Sent';
         } else {
           throw new Error(res.message || 'Submission failed');
         }
       })
       .catch(function () {
-        say('Something went wrong sending that. Please call or text us at 303-647-4188 and we will take care of it.', 'err');
+        say('Something went wrong sending that. Please call us at 303-647-4188 and we will take care of it.', 'err');
         btn.disabled = false;
         btn.textContent = 'Request Free Assessment';
       });
